@@ -1,1 +1,11 @@
-
+$ for i in $(seq 1 10); do curl -s --resolve canary.echo.pod.name.com:80:24.144.71.37 canary.echo.pod.name.com; done | grep -o '<span id='\'podName\''>[^<]*' | sed 's/<[^>]*>//g'
+base-app-5dbddc57c5-n8l5q
+base-app-5dbddc57c5-n8l5q
+canary-app-ccb44d45c-qdpkz
+base-app-5dbddc57c5-n8l5q
+base-app-5dbddc57c5-n8l5q
+base-app-5dbddc57c5-n8l5q
+canary-app-ccb44d45c-qdpkz
+canary-app-ccb44d45c-qdpkz
+base-app-5dbddc57c5-n8l5q
+base-app-5dbddc57c5-n8l5q
